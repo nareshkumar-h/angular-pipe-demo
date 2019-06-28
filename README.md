@@ -1,6 +1,7 @@
 ## Pipes
 
 * A pipe takes in data as input and transforms it to a desired output.
+* Inbuilt pipes - JSONPipe, UppercasePipe,LowercasePipe,DatePipe
 
 #### Step 1: Create an Angular project
 
