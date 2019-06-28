@@ -1,5 +1,7 @@
 ## Pipes
 
+* A pipe takes in data as input and transforms it to a desired output.
+
 #### Step 1: Create an Angular project
 
 #### Step 2: Add the variables in app.component.ts
