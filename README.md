@@ -36,4 +36,32 @@ Current Date : {{currentDate | date:'medium'}}
 <h3>Arrays(Default)</h3>
 {{products}}
 <h3>JsonPipe</h3>
-{{products | json}}```
+{{products | json}}
+````
+
+#### Step 4: Create a Custom Pipe to transform String to UpperCase
+```
+ng generate pipe upper
+```
+
+##### Step 4.1 : Implement Logic for Custom Pipe - upper.pipe.ts
+```
+import { Pipe, PipeTransform } from '@angular/core';
+
+@Pipe({
+  name: 'upper'
+})
+export class UpperPipe implements PipeTransform {
+
+  transform(value: string, ...args: any[]): any {
+    return value.toUpperCase();
+  }
+
+}
+```
+#### Test Custom Pipe
+```
+{{title | upper}}
+```
+```
+
