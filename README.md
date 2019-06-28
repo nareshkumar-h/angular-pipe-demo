@@ -66,5 +66,9 @@ export class UpperPipe implements PipeTransform {
 ```
 {{title | upper}}
 ```
-```
 
+#### Test Pipe Chaining
+* You can chain pipes together in potentially useful combinations.
+```
+{{ currentDate | date | uppercase}}
+```
